@@ -1,0 +1,34 @@
+# Pre-requisite:-
+Install Python 3.x version (e.g. 3.6 or more)
+
+#Burn in log verification script summary :-
+
+(1)  The script is validating the gateway log based on some pre-defined keyword from log file .
+
+(2)  After that, the script is performing operation and save data to one python dictionary
+
+(3)  Then the script is writing dictionaty data to csv file based on pre-defined column name
+
+(4)  One status column is showing result as Pass/Fail based on two keyword only
+      
+    • Fail status :- “U-Boot count is greater than or equal to 2 or Application terminated count is greater than or equal to 1” 
+
+(5)  CSV is appending all data of directory (e.g.all directory summary report is saved if old csv is not delete) with the status
+
+#Environment setup:-
+(1) Ubuntu – 16.01 /windows10 or above 
+(2) Python 3.x version
+
+#Ubuntu Run method:-
+    • Unzip the script using “unzip Burn_in_log_verification.zip” command.
+    • Go to the directory “Burn_in_log_verification/” after unzip.
+    • Right click in “Burn_in_log_verification/” and click on open terminal.
+    • Execute script as 
+      python3.x GW_log_filter.py “/home/admin/lot_1_time_7.30/”
+
+#Windows Run method:-
+    • extract the zip file
+    • open the command line using cmd
+    • Go to the directory “Burn_in_log_verification/” after unzip
+    • Execute script from correct path 
+      python3.x GW_log_filter.py “C:\Users\username\lot_1_time_7.30\”
